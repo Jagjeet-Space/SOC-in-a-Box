@@ -1,0 +1,45 @@
+[1 - Suricata-Main] 2025-08-25 20:41:50 Notice: suricata: This is Suricata version 7.0.11 RELEASE running in SYSTEM mode
+[1 - Suricata-Main] 2025-08-25 20:41:50 Info: cpu: CPUs/cores online: 12
+[1 - Suricata-Main] 2025-08-25 20:41:50 Info: suricata: Setting engine mode to IDS mode by default
+[1 - Suricata-Main] 2025-08-25 20:41:50 Info: exception-policy: master exception-policy set to: auto
+[1 - Suricata-Main] 2025-08-25 20:41:50 Info: conf: Running in live mode, activating unix socket
+[1 - Suricata-Main] 2025-08-25 20:41:50 Info: logopenfile: fast output device (regular) initialized: fast.log
+[1 - Suricata-Main] 2025-08-25 20:41:50 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[1 - Suricata-Main] 2025-08-25 20:41:50 Info: logopenfile: stats output device (regular) initialized: stats.log
+[1 - Suricata-Main] 2025-08-25 20:41:50 Warning: detect: No rule files match the pattern /var/lib/suricata/rules/suricata.rules
+[1 - Suricata-Main] 2025-08-25 20:41:50 Warning: detect: No rule files match the pattern /var/lib/suricata/rules/emerging-botcc.rules
+[1 - Suricata-Main] 2025-08-25 20:41:50 Warning: detect: No rule files match the pattern /var/lib/suricata/rules/emerging-compromised.rules
+[1 - Suricata-Main] 2025-08-25 20:41:53 Info: detect: 9 rule files processed. 19653 rules successfully loaded, 0 rules failed, 0
+[1 - Suricata-Main] 2025-08-25 20:41:53 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[1 - Suricata-Main] 2025-08-25 20:41:53 Info: detect: 19653 signatures processed. 0 are IP-only rules, 2423 are inspecting packet payload, 17217 inspect application layer, 0 are decoder event only
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.http.binary' is checked but not set. Checked in 2019421 and 5 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.http.javaclient' is checked but not set. Checked in 2015657 and 2 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'et.IE7.NoRef.NoCookie' is checked but not set. Checked in 2023671 and 9 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.gocd.auth' is checked but not set. Checked in 2034333 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'dcerpc.rpcnetlogon' is checked but not set. Checked in 2030870 and 6 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.BonitaDefaultCreds' is checked but not set. Checked in 2036817 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.ErlangOTPBanner' is checked but not set. Checked in 2061797 and 1 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'is_proto_irc' is checked but not set. Checked in 2002029 and 4 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.http.javaclient.vulnerable' is checked but not set. Checked in 2013036 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.ELFDownload' is checked but not set. Checked in 2019896 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'et.DocVBAProject' is checked but not set. Checked in 2020170 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.MSSQL' is checked but not set. Checked in 2020569 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.wininet.UA' is checked but not set. Checked in 2021312 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'et.MS.XMLHTTP.ip.request' is checked but not set. Checked in 2022050 and 1 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'et.MS.XMLHTTP.no.exe.request' is checked but not set. Checked in 2022053 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'et.MCOFF' is checked but not set. Checked in 2022303 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'et.MS.WinHttpRequest.no.exe.request' is checked but not set. Checked in 2022653 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.armwget' is checked but not set. Checked in 2024242 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.smb.binary' is checked but not set. Checked in 2027402 and 4 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.Socks5.OnionReq' is checked but not set. Checked in 2027704 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.autoit.ua' is checked but not set. Checked in 2019165 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'min.gethttp' is checked but not set. Checked in 2023711 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.generictelegram' is checked but not set. Checked in 2045614 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.implantjs.syn' is checked but not set. Checked in 2060257 and 2 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.JS.Obfus.Func' is checked but not set. Checked in 2017247 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.pdf.in.http' is checked but not set. Checked in 2025091 and 2 other sigs
+[1 - Suricata-Main] 2025-08-25 20:41:53 Warning: detect-flowbits: flowbit 'ET.SW.Bookmark' is checked but not set. Checked in 2061729 and 0 other sigs
+[1 - Suricata-Main] 2025-08-25 20:42:00 Warning: af-packet: wlo1: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[1 - Suricata-Main] 2025-08-25 20:42:00 Info: runmodes: wlo1: creating 12 threads
+[1 - Suricata-Main] 2025-08-25 20:42:00 Info: unix-manager: unix socket '/var/run/suricata/suricata-command.socket'
+[1 - Suricata-Main] 2025-08-25 20:42:01 Notice: threads: Threads created -> W: 12 FM: 1 FR: 1   Engine started.
