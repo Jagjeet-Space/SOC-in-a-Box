@@ -1,0 +1,4 @@
+{"index":{"_index":"cyberlab-logs"}}
+{"timestamp":"2025-08-24T10:00:00Z","host":"lubuntu","message":"User login success","user":"alice"}
+{"index":{"_index":"cyberlab-logs"}}
+{"timestamp":"2025-08-24T10:05:00Z","host":"lubuntu","message":"Failed password attempt","user":"bob"}
