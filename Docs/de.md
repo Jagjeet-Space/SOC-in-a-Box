@@ -1,5 +1,5 @@
 🗂️ GitHub Repository Structure for SOC in a Box
-text
+```
 SOC-in-a-Box/
 ├── README.md                          # Main project overview
 ├── docs/                              # Detailed documentation
@@ -23,6 +23,8 @@ SOC-in-a-Box/
 ├── tests/                             # Testing scripts and validation
 ├── CHANGELOG.md                       # Version history
 └── LICENSE                            # Project license
+```
+
 📝 Main README.md Template
 text
 # SOC in a Box - Complete Cybersecurity Operations Center Lab
