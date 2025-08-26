@@ -1,0 +1,13 @@
+# Add more sample logs
+echo "2025-08-26T22:41:00Z INFO Application startup completed" >> ../Sample_Logs/app.log
+echo "2025-08-26T22:41:15Z WARN Memory usage at 85%" >> ../Sample_Logs/app.log
+echo "2025-08-26T22:41:30Z ERROR Failed to connect to database" >> ../Sample_Logs/app.log
+
+echo "192.168.1.100 - - [26/Aug/2025:22:41:45 +0000] \"GET /login HTTP/1.1\" 200 1234" >> ../Sample_Logs/access.log
+echo "10.0.0.50 - - [26/Aug/2025:22:42:00 +0000] \"POST /admin HTTP/1.1\" 403 0" >> ../Sample_Logs/access.log
+
+echo "Aug 26 22:42:15 server sshd[1234]: Failed password for root from 192.168.1.200" >> ../Sample_Logs/system.log
+
+echo "2025-08-26T23:41:00Z ALERT Brute force attack detected!" >> ../Sample_Logs/sample.log
+echo "2025-08-26T23:41:15Z WARN Multiple failed login attempts" >> ../Sample_Logs/sample.log
+echo "2025-08-26T23:41:30Z ERROR Suspicious file upload blocked" >> ../Sample_Logs/sample.log

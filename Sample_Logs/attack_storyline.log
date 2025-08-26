@@ -1,0 +1,50 @@
+192.168.1.10 - - [27/Aug/2025:00:05:00 +0530] "DELETE /robots.txt HTTP/1.1" 500 494
+192.168.1.10 - - [27/Aug/2025:00:05:38 +0530] "GET /api/data HTTP/1.1" 500 4600
+10.0.0.5 - - [27/Aug/2025:00:06:38 +0530] "GET /robots.txt HTTP/1.1" 404 4127
+203.0.113.5 - - [27/Aug/2025:00:06:56 +0530] "POST /robots.txt HTTP/1.1" 404 1998
+172.16.0.3 - - [27/Aug/2025:00:07:54 +0530] "GET /index.html HTTP/1.1" 401 3376
+172.16.0.3 - - [27/Aug/2025:00:08:19 +0530] "POST /login HTTP/1.1" 401 2674
+203.0.113.5 - - [27/Aug/2025:00:08:47 +0530] "GET /index.html HTTP/1.1" 500 2310
+10.0.0.5 - - [27/Aug/2025:00:09:02 +0530] "GET /index.html HTTP/1.1" 500 3045
+203.0.113.5 - - [27/Aug/2025:00:09:29 +0530] "DELETE /api/data HTTP/1.1" 500 1711
+172.16.0.3 - - [27/Aug/2025:00:10:27 +0530] "GET /admin HTTP/1.1" 404 2264
+Aug 27 00:10:58 myhost sshd[12345]: Failed password for admin from 203.0.113.5 port 4020 ssh2
+Aug 27 00:11:44 myhost sshd[12345]: Failed password for admin from 198.51.100.7 port 40970 ssh2
+Aug 27 00:12:02 myhost sshd[12345]: Failed password for admin from 192.0.2.9 port 65408 ssh2
+Aug 27 00:12:58 myhost sshd[12345]: Failed password for ubuntu from 192.0.2.9 port 13501 ssh2
+Aug 27 00:13:50 myhost sshd[12345]: Failed password for ubuntu from 203.0.113.5 port 24776 ssh2
+Aug 27 00:14:30 myhost sshd[12345]: Failed password for admin from 192.0.2.9 port 50441 ssh2
+Aug 27 00:15:15 myhost sshd[12345]: Failed password for root from 192.0.2.9 port 48580 ssh2
+Aug 27 00:15:35 myhost sshd[12345]: Failed password for admin from 192.0.2.9 port 9682 ssh2
+Aug 27 00:16:31 myhost sshd[12345]: Failed password for ubuntu from 203.0.113.5 port 43738 ssh2
+Aug 27 00:16:43 myhost sshd[12345]: Failed password for test from 198.51.100.7 port 20545 ssh2
+Aug 27 00:16:53 myhost sshd[12345]: Failed password for root from 203.0.113.5 port 50898 ssh2
+Aug 27 00:17:27 myhost sshd[12345]: Failed password for test from 192.0.2.9 port 48612 ssh2
+Aug 27 00:17:45 myhost sshd[12345]: Failed password for admin from 203.0.113.5 port 10126 ssh2
+Aug 27 00:18:21 myhost sshd[12345]: Failed password for ubuntu from 203.0.113.5 port 22965 ssh2
+Aug 27 00:18:38 myhost sshd[12345]: Failed password for admin from 192.0.2.9 port 64551 ssh2
+172.16.0.3 - - [27/Aug/2025:00:18:58 +0530] "POST /robots.txt HTTP/1.1" 500 1689
+192.168.1.10 - - [27/Aug/2025:00:19:46 +0530] "POST /index.html HTTP/1.1" 500 1845
+192.168.1.10 - - [27/Aug/2025:00:20:42 +0530] "POST /admin HTTP/1.1" 404 2246
+203.0.113.5 - - [27/Aug/2025:00:20:52 +0530] "POST /index.html HTTP/1.1" 401 2122
+10.0.0.5 - - [27/Aug/2025:00:21:11 +0530] "DELETE /robots.txt HTTP/1.1" 404 4682
+Aug 27 00:21:47 10.10.10.10 system: Modified registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run\malicious.exe
+Aug 27 00:22:03 192.168.1.100 system: Executed suspicious binary /tmp/.dropper
+Aug 27 00:22:35 172.16.0.99 system: Executed suspicious binary /tmp/.dropper
+Aug 27 00:23:10 172.16.0.99 system: Modified registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run\malicious.exe
+Aug 27 00:23:52 172.16.0.99 system: Modified registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run\malicious.exe
+Aug 27 00:24:30 172.16.0.99 system: Modified registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run\malicious.exe
+Aug 27 00:25:14 10.10.10.10 system: Executed suspicious binary /tmp/.dropper
+Aug 27 00:25:35 172.16.0.99 system: Executed suspicious binary /tmp/.dropper
+Aug 27 00:26:06 192.168.1.100 system: Modified registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run\malicious.exe
+Aug 27 00:27:03 192.168.1.100 system: Modified registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run\malicious.exe
+Aug 27 00:27:59 172.16.0.99 system: Downloaded payload from http://malicious.site/payload.exe
+Aug 27 00:28:58 10.10.10.10 system: Established reverse shell to 203.0.113.5:4444
+Aug 27 00:29:26 172.16.0.99 system: Executed suspicious binary /tmp/.dropper
+Aug 27 00:30:11 172.16.0.99 system: Downloaded payload from http://malicious.site/payload.exe
+Aug 27 00:30:53 172.16.0.99 system: Modified registry key HKCU\Software\Microsoft\Windows\CurrentVersion\Run\malicious.exe
+203.0.113.5 - - [27/Aug/2025:00:31:36 +0530] "GET /login?username=' AND sleep(5) -- HTTP/1.1" 200 1024
+192.0.2.9 - - [27/Aug/2025:00:32:09 +0530] "GET /login?username=' OR '1'='1 HTTP/1.1" 200 1024
+203.0.113.5 - - [27/Aug/2025:00:32:46 +0530] "GET /login?username='; DROP TABLE users; -- HTTP/1.1" 200 1024
+192.0.2.9 - - [27/Aug/2025:00:33:40 +0530] "GET /login?username='; DROP TABLE users; -- HTTP/1.1" 200 1024
+203.0.113.5 - - [27/Aug/2025:00:34:15 +0530] "GET /login?username=' OR '1'='1 HTTP/1.1" 200 1024

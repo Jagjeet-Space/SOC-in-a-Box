@@ -1,0 +1,15 @@
+filebeat.inputs:
+- type: filestream
+  id: soc-logs
+  enabled: true
+  paths:
+    - /usr/share/filebeat/ingest_data/*.log
+    - /usr/share/filebeat/ingest_data/system.log
+    - /usr/share/filebeat/ingest_data/security.log
+
+output.elasticsearch:
+  hosts: ["http://elasticsearch:9200"]
+  username: "elastic"
+  password: "limitless"
+
+logging.level: info
