@@ -1,0 +1,52 @@
+# Docker-compose
+
+To understanding how **Docker** is running Elastic & Kibana we will explain every conf line in docker-compose yml file.
+
+This is full conf snippet of docker-compose 
+
+```yaml
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+    container_name: es01
+    environment:
+      - node.name=es01
+      - cluster.name=soc-box
+      - discovery.type=single-node
+      - xpack.security.enabled=false        # Temporarily disable
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - bootstrap.memory_lock=true
+    ports:
+      - "${ES_PORT}:9200"
+    ulimits:
+      memlock: -1
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f -u elastic:${ELASTIC_PASSWORD} http://localhost:9200/_cluster/health || exit 1"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    deploy:
+      resources:
+        limits:
+          memory: ${ES_MEM_LIMIT}
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:${STACK_VERSION}
+    container_name: kb01
+    ports:
+      - "${KIBANA_PORT}:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - ELASTICSEARCH_SERVICEACCOUNTTOKEN=AAEAAWVsYXN0aWMva2liYW5hL2tpYmFuYS10b2tlbjp4Q000LWhRR1M1cWtVOEZReUdPdjF3
+      - SERVER_HOST=0.0.0.0
+      - xpack.security.enabled=false          # Temporarily Disable
+      - xpack.encryptedSavedObjects.encryptionKey=abcdefghijklmnopqrstuvwxyz0123456789
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: ${KB_MEM_LIMIT}
+```
