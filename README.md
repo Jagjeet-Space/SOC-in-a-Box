@@ -5,3 +5,7 @@ SOC-in-a-Box is light weight SIEM deployment through docker. Its only purpose is
 This SIEM is consist of Elastic & Kibana for log analysis, KQL queires and dashboards visualization. It will really help a beginner SOC analyst who want to lear and practice SIEM.
 
 <img width="1420" height="473" alt="SOC-in-a-Box" src="https://github.com/user-attachments/assets/631b044f-6a5d-4a21-89e9-77d3d02e9c85" />
+
+
+With the help of docker deploying SIEM become easy all you have to do is download Docker folder and just run cmd `docker compose up -d` after that docker will handle everything.
+For viweing **Kibana** dashboard you go to host/5600.com 
